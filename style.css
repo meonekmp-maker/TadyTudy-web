@@ -41,14 +41,30 @@ html{scrollbar-gutter:stable}html,body{height:100%;min-height:0;overflow:hidden}
 @media(max-width:720px){.phone-group{width:min(94cqw,96cqh);justify-self:center;margin-right:0;transform:none}}
 
 /* Vycentrování úvodu pouze na mobilu. */
+body{--header-height:min(82px,10dvh);--about-height:min(49px,7dvh);height:100dvh}
+.header{height:var(--header-height)}
+.about-app{padding-block:min(12px,1.7dvh) min(16px,2.3dvh)}
+.about-app summary{font-size:min(14px,2dvh);line-height:min(20px,3dvh)}
+main:has(.about-app[open]) .hero{flex-basis:calc(100dvh - var(--header-height) - var(--about-height))}
+@media(min-width:721px) and (max-height:600px){
+  .hero{padding-block:1.5dvh 3dvh}
+  .hero-copy h1{font-size:min(4vw,7dvh);margin-bottom:3dvh}
+  .hero-copy .intro{font-size:min(16px,2.8dvh);line-height:1.5;margin-bottom:2dvh}
+  .hero-copy .intro>span{white-space:normal}
+  .hero-copy .play-button{width:min(220px,30dvh)}
+}
 @media(max-width:720px){
-  .header{justify-content:center}
+  body{--header-height:min(70px,10dvh)}
+  .header{height:var(--header-height);justify-content:center}
+  .brand{font-size:min(23px,4dvh)}
+  .brand img{width:min(35px,5dvh);height:auto}
   .header nav{display:none}
-  .hero{gap:20px}
+  .hero{gap:min(20px,2.5dvh);padding-block:min(14px,2dvh) min(20px,2.5dvh)}
+  main:has(.about-app[open]) .hero{flex-basis:calc(100dvh - var(--header-height) - var(--about-height))}
   .hero-copy{min-width:0;text-align:center;container-type:inline-size}
-  .hero-copy h1{max-width:none;font-size:calc((100vw - 40px) * .115);font-size:11.5cqw;line-height:1.08;letter-spacing:-.035em;margin-bottom:20px}
-  .hero-copy .intro{max-width:none;display:grid;gap:6px;font-size:clamp(13px,3.5vw,17px);line-height:1.45;text-align:center;margin-bottom:20px}
-  .hero-copy .play-button{display:block;margin-inline:auto}
+  .hero-copy h1{max-width:none;font-size:min(calc((100vw - 40px) * .115),7dvh);font-size:min(11.5cqw,7dvh);line-height:1.08;letter-spacing:-.035em;margin-bottom:min(20px,2.5dvh)}
+  .hero-copy .intro{max-width:none;display:grid;gap:min(6px,.8dvh);font-size:min(clamp(13px,3.5vw,17px),2.3dvh);line-height:1.45;text-align:center;margin-bottom:min(20px,2.5dvh)}
+  .hero-copy .play-button{display:block;width:min(220px,27dvh);margin-inline:auto}
   .phone-group{align-self:start}
   .hero-copy .intro>span{padding-left:0;white-space:normal;text-wrap:balance}
   .hero-copy .intro>span:first-child{letter-spacing:normal}

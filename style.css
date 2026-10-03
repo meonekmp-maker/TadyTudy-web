@@ -39,3 +39,6 @@ html{scrollbar-gutter:stable}html,body{height:100%;min-height:0;overflow:hidden}
 .phone-navigation{top:0;left:0;z-index:0}
 .phone-creator{top:8%;left:30%;z-index:1}.phone-games{top:16%;right:0;z-index:2}
 @media(max-width:720px){.phone-group{width:min(94cqw,96cqh);justify-self:center;margin-right:0;transform:none}}
+
+/* Vycentrování úvodu pouze na mobilu. */
+@media(max-width:720px){.header{justify-content:center}.header nav{display:none}.hero-copy{text-align:center}.hero-copy .intro{text-align:left}}

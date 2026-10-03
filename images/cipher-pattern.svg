@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800">
+  <g fill="#506575" opacity=".14" font-family="monospace" font-size="18" letter-spacing="3">
+    <!-- A1Z26: TADYTUDY -->
+    <text transform="translate(42 70) rotate(-10)"><tspan x="0">20 · 01 · 04 · 25</tspan><tspan x="0" dy="27">20 · 21 · 04 · 25</tspan></text>
+    <!-- Morse: TADY / TUDY -->
+    <text transform="translate(395 110) rotate(9)" letter-spacing="2"><tspan x="0">− / ·− / −·· / −·−−</tspan><tspan x="0" dy="27">− / ··− / −·· / −·−−</tspan></text>
+    <!-- Caesar +3: POKLAD -->
+    <text transform="translate(830 60) rotate(-7)"><tspan x="0" font-size="12">A → D / +3</tspan><tspan x="0" dy="27">SRNODG</tspan></text>
+    <!-- ASCII binary: POKLAD -->
+    <text transform="translate(775 210) rotate(8)" font-size="14" letter-spacing="2"><tspan x="0">01010000 01001111</tspan><tspan x="0" dy="23">01001011 01001100</tspan><tspan x="0" dy="23">01000001 01000100</tspan></text>
+    <!-- A1Z26 in Roman numerals: POKLAD -->
+    <text transform="translate(65 290) rotate(8)" font-size="16"><tspan x="0">XVI · XV · XI</tspan><tspan x="0" dy="27">XII · I · IV</tspan></text>
+    <!-- Caesar +3: TADYTUDY -->
+    <text transform="translate(410 350) rotate(-8)"><tspan x="0" font-size="12">A B C → D E F</tspan><tspan x="0" dy="29" font-size="22">WDGBWXGB</tspan></text>
+    <!-- Morse: POK / LAD -->
+    <text transform="translate(785 425) rotate(10)" font-size="16" letter-spacing="2"><tspan x="0">·−−· / −−− / −·−</tspan><tspan x="0" dy="27">·−·· / ·− / −··</tspan></text>
+    <!-- A1Z26: DOBRODRUZSTVI -->
+    <text transform="translate(35 480) rotate(-11)" font-size="15" letter-spacing="2"><tspan x="0">04 15 02 18 15 04 18</tspan><tspan x="0" dy="26">21 26 19 20 22 09</tspan></text>
+    <!-- ASCII binary: TADY / TUDY -->
+    <text transform="translate(535 530) rotate(7)" font-size="13" letter-spacing="1"><tspan x="0">01010100 01000001</tspan><tspan x="0" dy="22">01000100 01011001</tspan><tspan x="0" dy="22">01010100 01010101</tspan><tspan x="0" dy="22">01000100 01011001</tspan></text>
+    <!-- Atbash: POKLAD -->
+    <text transform="translate(840 645) rotate(-11)"><tspan x="0" font-size="12">A ↔ Z / B ↔ Y</tspan><tspan x="0" dy="27">KLPOZW</tspan></text>
+    <!-- Caesar +3: DOBRODRUZSTVI -->
+    <text transform="translate(180 655) rotate(10)" font-size="17"><tspan x="0" font-size="12">+3 / XIII</tspan><tspan x="0" dy="28">GREURGUXCVWYL</tspan></text>
+    <!-- A1Z26: POKLAD -->
+    <text transform="translate(595 750) rotate(-6)" font-size="16">16 · 15 · 11 · 12 · 01 · 04</text>
+  </g>
+  <g fill="none" stroke="#5d7d24" stroke-width="1.5" opacity=".15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M260 160h42m-42 14h42m-28-28v42m14-42v42" transform="rotate(12 281 167)"/>
+    <path d="m710 135 17-17 17 17-17 17Z m17-27v54m-27-27h54"/>
+    <path d="M60 710h20v-20h20v40h20v-20h20"/>
+    <path d="m1010 420 18-30 18 30Z m18-20v8m0 6v1"/>
+    <circle cx="445" cy="550" r="20"/>
+    <path d="m435 560 20-20m-20 0h20v20"/>
+  </g>
+</svg>

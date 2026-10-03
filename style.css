@@ -19,5 +19,23 @@ html,body{min-height:100%;overflow:hidden}body{height:100vh;height:100svh;displa
 
 .hero-copy h1{font-size:clamp(39px,4vw,52px)}@media(max-width:720px){.hero-copy h1{font-size:clamp(31px,7.8vw,45px)}}@media(max-width:720px) and (max-height:700px){.hero-copy h1{font-size:clamp(29px,7.3vw,39px)}}
 
-/* Originální český odznak Google Play bez úprav grafiky. */
-.play-button,.play-button:hover{display:inline-block;min-height:0;padding:0;border-radius:0;background:transparent;box-shadow:none;line-height:0}.play-button img{width:230px;height:auto;max-width:100%}@media(max-width:720px){.play-button,.play-button:hover{min-height:0;padding:0}.play-button img{width:205px}}
+.play-button{display:inline-block;width:220px;max-width:100%;min-height:0;padding:0;background:transparent;border-radius:0;box-shadow:none;vertical-align:top}.play-button:hover{background:transparent}.play-button img{width:100%;height:auto}
+
+.brand-tady,.hero-copy h1{color:#5d7d24}.brand-tudy,.hero-copy h1>span{color:#2b6a9f}
+
+.hero-visual{border-radius:32px}
+
+body{background-image:url('images/cipher-pattern.svg');background-size:1100px 800px;background-repeat:repeat}
+
+/* Doplňující návod se rozbaluje přímo pod úvodem. */
+html{scrollbar-gutter:stable}html,body{height:100%;min-height:0;overflow:hidden}body{height:100svh;display:flex;flex-direction:column}main{flex:1;min-height:0;display:flex;flex-direction:column;position:relative}.hero{height:auto;min-height:0}.about-app{flex:none;padding-block:12px 16px;border-top:1px solid var(--line)}main:has(.about-app[open]) .hero{flex:0 0 calc(100svh - 131px)}html:has(.about-app[open]){overflow-y:auto}body:has(.about-app[open]){overflow:visible}.about-app summary{line-height:20px;width:fit-content;cursor:pointer;font-size:14px;color:var(--muted)}.about-app summary:hover{color:var(--blue)}.about-app summary:focus-visible{outline:3px solid var(--blue);outline-offset:6px}.guide-content{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px;row-gap:12px;max-width:100%;padding:24px 0 0;margin-top:12px}.guide-content:focus-visible{outline:2px solid var(--blue);outline-offset:2px}.guide-content>h2,.guide-content>p{grid-column:1/-1}.guide-content>section{min-width:0}.guide-content h2{font-size:clamp(28px,4vw,38px)}.guide-content h2>span{color:var(--blue)}.guide-content h3{font-size:clamp(21px,3vw,26px);margin:12px 0 14px}.guide-content p{font-size:16px;line-height:1.6;color:var(--muted);margin:0 0 16px}@media(min-width:721px) and (max-width:1000px){.guide-content{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){main:has(.about-app[open]) .hero{flex-basis:calc(100svh - 119px)}.guide-content{grid-template-columns:1fr;row-gap:0}.guide-content p{font-size:16px}}
+.hero-copy .intro{width:100%;max-width:440px}.hero-copy .intro>span{display:block;position:relative;padding-left:18px;white-space:nowrap}.hero-copy .intro>span::before{content:"";position:absolute;left:1px;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:#000}.hero-copy .intro>span:first-child{letter-spacing:.1px}@media(max-width:390px){.hero-copy .intro{font-size:clamp(11.5px,3.4vw,14px)}}
+
+/* Původní snímky aplikace v rámečcích telefonů. */
+.hero-visual.phone-showcase{background:transparent;border-radius:0;overflow:visible;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;container-type:size}
+.phone-group{position:relative;width:min(131.6cqw,96cqh);aspect-ratio:1.05;justify-self:end}
+.phone{position:absolute;width:40%;padding:clamp(4px,.65vw,8px);border:2px solid #454545;border-radius:clamp(15px,2.5vw,34px);background:#111;box-shadow:0 12px 22px #0b2a4426,inset 0 0 0 1px #777}
+.phone img{width:100%;height:auto;border-radius:clamp(9px,1.8vw,25px)}
+.phone-navigation{top:0;left:0;z-index:0}
+.phone-creator{top:8%;left:30%;z-index:1}.phone-games{top:16%;right:0;z-index:2}
+@media(max-width:720px){.phone-group{width:min(94cqw,96cqh);justify-self:center;margin-right:0;transform:none}}

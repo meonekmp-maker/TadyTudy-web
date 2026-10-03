@@ -41,4 +41,16 @@ html{scrollbar-gutter:stable}html,body{height:100%;min-height:0;overflow:hidden}
 @media(max-width:720px){.phone-group{width:min(94cqw,96cqh);justify-self:center;margin-right:0;transform:none}}
 
 /* Vycentrování úvodu pouze na mobilu. */
-@media(max-width:720px){.header{justify-content:center}.header nav{display:none}.hero-copy{text-align:center}.hero-copy .intro{text-align:left}}
+@media(max-width:720px){
+  .header{justify-content:center}
+  .header nav{display:none}
+  .hero{gap:20px}
+  .hero-copy{min-width:0;text-align:center;container-type:inline-size}
+  .hero-copy h1{max-width:none;font-size:calc((100vw - 40px) * .115);font-size:11.5cqw;line-height:1.08;letter-spacing:-.035em;margin-bottom:20px}
+  .hero-copy .intro{max-width:none;display:grid;gap:6px;font-size:clamp(13px,3.5vw,17px);line-height:1.45;text-align:center;margin-bottom:20px}
+  .hero-copy .play-button{display:block;margin-inline:auto}
+  .phone-group{align-self:start}
+  .hero-copy .intro>span{padding-left:0;white-space:normal;text-wrap:balance}
+  .hero-copy .intro>span:first-child{letter-spacing:normal}
+  .hero-copy .intro>span::before{position:static;display:inline-block;transform:none;margin-right:8px;vertical-align:middle;background:var(--muted)}
+}

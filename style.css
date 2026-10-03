@@ -35,7 +35,7 @@ html{scrollbar-gutter:stable}html,body{height:100%;min-height:0;overflow:hidden}
 .hero-visual.phone-showcase{background:transparent;border-radius:0;overflow:visible;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;container-type:size}
 .phone-group{position:relative;width:min(131.6cqw,96cqh);aspect-ratio:1.05;justify-self:end}
 .phone{position:absolute;width:40%;padding:clamp(4px,.65vw,8px);border:2px solid #454545;border-radius:clamp(15px,2.5vw,34px);background:#111;box-shadow:0 12px 22px #0b2a4426,inset 0 0 0 1px #777}
-.phone img{width:100%;height:auto;border-radius:clamp(9px,1.8vw,25px)}
+.phone img{width:100%;height:auto;border-radius:clamp(9px,1.8vw,25px);background:var(--paper)}
 .phone-navigation{top:0;left:0;z-index:0}
 .phone-creator{top:8%;left:30%;z-index:1}.phone-games{top:16%;right:0;z-index:2}
 @media(max-width:720px){.phone-group{width:min(94cqw,96cqh);justify-self:center;margin-right:0;transform:none}}
